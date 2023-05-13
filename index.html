@@ -11,46 +11,49 @@
   </head>
   <body class="container">
     <header>
-      <nav id="nav" class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" alt="Futbol News" width="167" height="57" />
-          </a>
-          <a href="https://www.facebook.com/Virbela/" target="_blank"><img class="icon-red-social-nav" src="iconos/facebook.svg" /></a>
-          <a href="https://twitter.com/VirbelaHQ" target="_blank"><img class="icon-red-social-nav" src="iconos/twitter.svg" /></a>
-          <a href="https://www.instagram.com/virbelahq/" target="_blank"><img class="icon-red-social-nav" src="iconos/instagram.svg" /></a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"> </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="icon-red-social-nav" src="iconos/dia-noche-negro.png" alt="Cambiar tema" />
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item disabled" href="#">
-                      <img class="icon-red-social-nav" src="iconos/lune-negra.png" alt="" />
-                      Modo Oscuro
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item disabled" href="#">
-                      <img class="icon-red-social-nav" src="iconos/sol-negro.png" alt="" />
-                      Modo Claro
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+      <nav id="nav" class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5)">
+        <div class="container-fluid row">
+          <div class="col">
+            <a class="navbar-brand" href="index.html"><img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" alt="Futbol News" width="167" height="57" /> </a>
+          </div>
+          <div class="col text-center d-flex justify-content-center d-none d-sm-block ocultar-redes-nav">
+            <a href="https://www.facebook.com/Virbela/" target="_blank"><img class="icon-red-social-nav" src="iconos/facebook.svg" /></a>
+            <a href="https://twitter.com/VirbelaHQ" target="_blank"><img class="icon-red-social-nav" src="iconos/twitter.svg" /></a>
+            <a href="https://www.instagram.com/virbelahq/" target="_blank"><img class="icon-red-social-nav" src="iconos/instagram.svg" /></a>
+          </div>
+          <div class="col text-end d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto align-items-center justify-content-end">
+                <li class="nav-item">
+                  <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="icon-red-social-nav" src="iconos/dia-noche-negro.png" alt="Cambiar tema" />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item disabled" href="#">
+                        <img class="icon-red-social-nav" src="iconos/lune-negra.png" alt="" />
+                        Modo Oscuro
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">
+                        <img class="icon-red-social-nav" src="iconos/sol-negro.png" alt="" />
+                        Modo Claro
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -62,13 +65,13 @@
             <div class="col-6 pt-5 fondo-video-metaverso" style="border-radius: 10px 0 0 60%">
               <div>
                 <h2>Evento Virbela en <strong>Argentina</strong></h2>
-                <p>El <em>evento del año</em> en el metaverso</p>
+                <p class="p-2">El <em>evento del año</em> en el metaverso</p>
                 <a type="button" class="btn btn-primary btn-lg" href="register.html" style="background-color: #ce4848">REGISTRATE</a>
               </div>
             </div>
             <div class="col-6 fondo-video-metaverso" style="border-radius: 0 10px 10px 0">
               <div>
-                <video class="video-metaverso" autoplay muted playsinline loop>
+                <video class="video-metaverso d-none d-sm-block" autoplay muted playsinline loop>
                   <source src="videos/video-metaverso.mp4" type="video/mp4" />
                   Tu navegador no admite el elemento de video.
                 </video>
@@ -135,7 +138,7 @@
       <section>
         <h3>Nuestros Partners</h3>
         <div class="container container-fluid">
-          <div class="row align-items-center justify-content-center container-fluid d-flex align-items-center justify-content-center">
+          <div class="row container-fluid d-flex align-items-center justify-content-center">
             <div class="col m-4 d-flex justify-content-center">
               <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fac92ef0f780958851af0de_logo-ucsd.png" class="icono-partner" loading="lazy" alt="" />
             </div>
@@ -176,7 +179,7 @@
         </div>
       </section>
     </main>
-    <div class="row">
+    <div class="top-image-curve-footer">
       <img src="imagenes/curve.png" alt="" />
     </div>
     <footer>
