@@ -13,6 +13,9 @@ Se han creado dos archivos HTML para este proyecto:
 
 -   `index.html`: La página principal (landing page) del evento.
 -   `register.html`: Cuenta con un formulario desde donde se puede enviar un correo electrónico para registrarse en el evento.
+-   `styles.css`: Archivo de estilos css principales de la pagina. Son los estilos correspondientes al tema claro.
+-   `styles-dark.css`: Archivo css con los estilos correspondientes al tema oscuro.
+-   `switch-tema-and-form.js`: Archivo JS con la funcionalidad para realizar el cambio de tema en la pagina y el envio del form.
 
 Ambas páginas cuentan con un header y un footer que cumplen con los requisitos solicitados por la plataforma de e-learning.
 
