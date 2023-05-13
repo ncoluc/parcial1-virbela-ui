@@ -11,34 +11,42 @@
   </head>
   <body class="container">
     <header>
-      <nav id="nav" class="navbar navbar-expand-lg" style="background-color: #ffffff">
+      <nav id="nav" class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" loading="lazy" alt="" class="logo-black" />
-            <!-- <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab8df9f04ad664cd02dd67_virbela-logo-white-website.png" loading="lazy" alt="" class="logo-white">   -->
+            <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" alt="Futbol News" width="167" height="57" />
           </a>
+          <a href="https://www.facebook.com/Virbela/" target="_blank"><img class="icon-red-social-nav" src="iconos/facebook.svg" /></a>
+          <a href="https://twitter.com/VirbelaHQ" target="_blank"><img class="icon-red-social-nav" src="iconos/twitter.svg" /></a>
+          <a href="https://www.instagram.com/virbelahq/" target="_blank"><img class="icon-red-social-nav" src="iconos/instagram.svg" /></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="https://www.facebook.com/Virbela/" target="_blank"><img class="icon-red-social" src="iconos/facebook.svg" /></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://twitter.com/VirbelaHQ" target="_blank"><img class="icon-red-social" src="iconos/twitter.svg" /></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.instagram.com/virbelahq/" target="_blank"><img class="icon-red-social" src="iconos/instagram.svg" /></a>
+                <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tema </a>
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="icon-red-social-nav" src="iconos/dia-noche-negro.png" alt="Cambiar tema" />
+                </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item disabled" href="#">Claro</a>
+                    <a class="dropdown-item disabled" href="#">
+                      <img class="icon-red-social-nav" src="iconos/lune-negra.png" alt="" />
+                      Modo Oscuro
+                    </a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item disabled" href="#">Oscuro</a>
+                    <a class="dropdown-item disabled" href="#">
+                      <img class="icon-red-social-nav" src="iconos/sol-negro.png" alt="" />
+                      Modo Claro
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -48,23 +56,57 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="section-registro">
         <div class="container p-5">
-          <div class="container div-detalle-envio">
+          <div class="container div-rojo">
             <div class="row">
-              <h3>Registro</h3>
+              <h3>Registrate</h3>
             </div>
-            <div class="row m-5">
-              <div class="col-6">
+            <div class="row m-2">
+              <div class="col-12 col-md-6 col-regristro">
                 <p>
                   <strong>Que esperas?</strong><br />
                   Registrate y se parte del mayor evento del año en <strong>Metaverso</strong>
                 </p>
                 <p>Te invitamos a escuchar a los mayores referentes de esta maravillosa tecnologia.</p>
-                <p><strong>No esperes más y registrate.</strong></p>
+                <p class="p-final-registro"><strong>No esperes más y registrate.</strong></p>
               </div>
-              <div class="col-6">
-                <form>DESARROLLO FOMRULARIO</form>
+              <div class="col-12 col-md-6 offset-md-0 formulario">
+                <form class="row">
+                  <h4>Completa el formulario para enviarnos un mail con tu asistencia</h4>
+                  <div class="col-12 col-md-6">
+                    <label for="validationServer01" class="form-label"></label>
+                    <input type="text" class="form-control" id="validationServer01" placeholder="Nombre" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="validationServer02" class="form-label"></label>
+                    <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="validationServer03" class="form-label"></label>
+                    <input type="text" class="form-control" id="validationServer03" placeholder="DNI" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="validationServer03" class="form-label"></label>
+                    <input type="text" class="form-control" id="validationServer03" placeholder="Telefono" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="validationServer03" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail" required />
+                  </div>
+                  <div class="col-12 pt-3">
+                    <div class="form-check">
+                      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required />
+                      <label class="form-check-label" for="invalidCheck3">
+                        <a class="formulario" href="https://www.virbela.com/terms-of-service" target="_blank">Terminos y condiciones del evento.</a>
+                      </label>
+                      <div id="invalidCheck3Feedback" class="invalid-feedback formulario">Debe estar de acuerdo antes de enviar.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3">
+                    <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
