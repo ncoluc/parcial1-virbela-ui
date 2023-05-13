@@ -49,5 +49,5 @@ El enfoque principal ha sido la maquetación de las páginas, seguida de los det
 
 # Repositorio y Publicación
 
-    Repositorio en GitHub: https://github.com/ncoluc/parcial1-virbela-ui
-    Publicación en Netlify: 
+- Repositorio en GitHub: https://github.com/ncoluc/parcial1-virbela-ui
+- Publicación en Netlify:
