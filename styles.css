@@ -5,11 +5,11 @@ body {
 
 .section-video-metaverso {
   font-size: 20px;
-  margin-top: 74px;
+  margin-top: 84px;
 }
 
 .section-registro {
-  margin-top: 74px;
+  margin-top: 70px;
 }
 
 .top-image-curve-footer {
@@ -40,7 +40,6 @@ footer {
   align-items: center;
   justify-content: center;
   --bs-gutter-x: unset;
-  font-size: 16px;
 }
 
 footer h4 {
@@ -77,7 +76,7 @@ footer ul li a:hover {
   height: 30px;
 }
 
-.icon-red-social-nav {
+.icono-nav {
   width: 40px;
   height: 40px;
   padding: 3px;
@@ -154,4 +153,30 @@ footer ul li a:hover {
 
 .formulario {
   color: #fff !important;
+}
+
+
+.contenedor-padre {
+  display: flex;
+  align-items: center;
+}
+
+.izquierda {
+  padding-left: 10px;
+}
+
+.centro {
+  text-align: center;
+  
+}
+
+.derecha {
+  flex: 1;
+  text-align: right;
+  align-items: initial;
+}
+
+.icono-tema{
+  width: 30px;
+  height: 30px;
 }

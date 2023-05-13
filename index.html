@@ -11,49 +11,40 @@
   </head>
   <body class="container">
     <header>
-      <nav id="nav" class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5)">
-        <div class="container-fluid row">
-          <div class="col">
-            <a class="navbar-brand" href="index.html"><img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" alt="Futbol News" width="167" height="57" /> </a>
-          </div>
-          <div class="col text-center d-flex justify-content-center d-none d-sm-block ocultar-redes-nav">
-            <a href="https://www.facebook.com/Virbela/" target="_blank"><img class="icon-red-social-nav" src="iconos/facebook.svg" /></a>
-            <a href="https://twitter.com/VirbelaHQ" target="_blank"><img class="icon-red-social-nav" src="iconos/twitter.svg" /></a>
-            <a href="https://www.instagram.com/virbelahq/" target="_blank"><img class="icon-red-social-nav" src="iconos/instagram.svg" /></a>
-          </div>
-          <div class="col text-end d-flex">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"> </span>
-            </button>
-            <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto align-items-center justify-content-end">
-                <li class="nav-item">
-                  <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img class="icon-red-social-nav" src="iconos/dia-noche-negro.png" alt="Cambiar tema" />
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item disabled" href="#">
-                        <img class="icon-red-social-nav" src="iconos/lune-negra.png" alt="" />
-                        Modo Oscuro
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item disabled" href="#">
-                        <img class="icon-red-social-nav" src="iconos/sol-negro.png" alt="" />
-                        Modo Claro
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5)">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png" alt="Futbol News" width="167" height="57" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item pe-2">
+                <a href="https://www.facebook.com/Virbela/" target="_blank">
+                  <img class="icono-nav" src="iconos/facebook.svg" />
+                </a>
+              </li>
+              <li class="nav-item pe-2">
+                <a href="https://twitter.com/VirbelaHQ" target="_blank">
+                  <img class="icono-nav" src="iconos/twitter.svg" />
+                </a>
+              </li>
+              <li class="nav-item pe-5">
+                <a href="https://www.instagram.com/virbelahq/" target="_blank">
+                  <img class="icono-nav" src="iconos/instagram.svg" />
+                </a>
+              </li>
+              <li class="nav-item pe-5">
+                <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="iconos/dia-noche-negro.png" alt="Modo" class="icono-nav" />
+                </a>                
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -109,13 +100,13 @@
         </div>
       </section>
       <section>
-        <div class="container p-5">
+        <div class="container pt-5 pb-5">
           <div class="container div-rojo">
             <div class="row">
               <h3>Detalles Evento</h3>
             </div>
-            <div class="row m-5">
-              <div class="col-6">
+            <div class="row m-2">
+              <div class="col-12 col-md-6">
                 <p>
                   <strong>Que esperar:<br /></strong>Únase a nosotros para una discusión activa sobre Metaverso y su impacto en el futuro del trabajo con un estimado panel de expertos.
                 </p>
@@ -127,7 +118,7 @@
                 </ul>
                 <p>Después del panel de discusión, quédese para una sesión de networking y la oportunidad de hablar con los panelistas y otros asistentes al evento.</p>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6 offset-md-0">
                 <p><strong>Cuando y Donde: </strong>Viernes 13 de mayo, 15:00pm (UTC -3) en Alvear Palace Hotel (Buenos Aires, Recoleta)</p>
                 <iframe id="map-evento" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6556319270667!2d-58.391421423444065!3d-34.587579156647486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa37c9450ad%3A0x9cdf7e292ed4c101!2sAlvear%20Palace%20Hotel!5e0!3m2!1ses!2sar!4v1683852518080!5m2!1ses!2sar" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
