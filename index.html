@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles-dark.css" />
+    <link id="style-page" rel="stylesheet" href="css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/switch-tema-and-form.js"></script>
     <title>Evento Virbela - Argentina</title>
   </head>
-  <body class="container">
+  <body class="container" onload="controlarModoEnLocalStorage()">
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -40,8 +41,8 @@
                 <a type="button" class="btn btn-primary btn-lg btn-register-nav" href="register.html">REGISTRATE</a>
               </li>
               <li class="nav-item pt-2">
-                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="iconos/dia-noche-negro.png" alt="Modo" class="icono-nav" />
+                <a id="botonCambioModo" role="button" onclick="cambiarModo()" aria-expanded="false" value="false">
+                  <img src="iconos/dia-noche-negro.png" alt="Cambio Modo" class="icono-nav" />
                 </a>
               </li>
             </ul>
@@ -129,42 +130,42 @@
       <section>
         <h3>Nuestros Partners</h3>
         <div class="container container-fluid">
-          <div class="row container-fluid d-flex align-items-center justify-content-center">
+          <div id="div-partners" class="row container-fluid d-flex align-items-center justify-content-center">
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Arizona State University.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Arizona State University.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Concentrix.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Concentrix.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/DXC-Tec.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/DXC-Tec.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Economist Impact.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Economist Impact.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Exp Realty.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Exp Realty.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Johmson y Johmson.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Johmson y Johmson.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Komodal.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Komodal.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Laval Virtual.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Laval Virtual.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/mu Rata.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/mu Rata.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/Pwc.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/Pwc.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/UcSanDiego.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/UcSanDiego.png" class="icono-partner" loading="lazy" alt="" />
             </div>
             <div class="col m-4 d-flex justify-content-center">
-              <img src="logos-partners-dark/VMWare.png" class="icono-partner" loading="lazy" alt="" />
+              <img src="logos-partners/VMWare.png" class="icono-partner" loading="lazy" alt="" />
             </div>
           </div>
         </div>

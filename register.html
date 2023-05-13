@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles-dark.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/switch-tema-and-form.js"></script>
     <title>Evento Virbela - Argentina</title>
   </head>
   <body class="container">
@@ -63,27 +64,19 @@
                 <p class="p-final-registro"><strong>No esperes más y registrate.</strong></p>
               </div>
               <div class="col-12 col-md-6 offset-md-0 formulario">
-                <form class="row" action="mailto:gabriel.molina@unahur.edu.ar" method="post" enctype="text/plain">
+                <form id="formulario-evento" class="row" action="mailto:gabriel.molina@unahur.edu.ar" method="post" enctype="text/plain">
                   <h4>Completa el formulario para enviarnos un mail con tu asistencia</h4>
                   <div class="col-12 col-md-6">
                     <label for="validationServer01" class="form-label"></label>
-                    <input type="text" class="form-control" id="validationServer01" placeholder="Nombre" required />
+                    <input id="nombre" type="text" class="form-control" id="validationServer01" placeholder="Nombre" required />
                   </div>
                   <div class="col-12 col-md-6">
                     <label for="validationServer02" class="form-label"></label>
-                    <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" required />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="validationServer03" class="form-label"></label>
-                    <input type="text" class="form-control" id="validationServer03" placeholder="DNI" required />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="validationServer03" class="form-label"></label>
-                    <input type="text" class="form-control" id="validationServer03" placeholder="Telefono" required />
+                    <input id="apellido" type="text" class="form-control" id="validationServer02" placeholder="Apellido" required />
                   </div>
                   <div class="col-12 col-md-12">
                     <label for="validationServer03" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail" required />
+                    <input id="mail" type="email" class="form-control" placeholder="Mail" required />
                   </div>
                   <div class="col-12 pt-3">
                     <div class="form-check">
