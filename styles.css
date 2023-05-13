@@ -3,6 +3,11 @@ body {
   --bs-gutter-x: 0rem;
 }
 
+nav{
+  background-color: #ffffff; 
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .section-video-metaverso {
   font-size: 20px;
   padding-top: 82px;
