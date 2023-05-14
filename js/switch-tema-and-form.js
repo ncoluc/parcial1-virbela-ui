@@ -48,20 +48,20 @@ function enviarFormulario(event) {
 
   function activarModoOscuro() {
     localStorage.setItem("modoOscuroActivado", 'true');
-    const htmlActual = window.location.pathname;
+    const idBodyActual = document.body.id;
     document.getElementById("style-page").href = 'css/styles-dark.css';
 
-    if (htmlActual.includes('/index.html')) {
+    if (idBodyActual == 'bodyIndex') {
       seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-light', 'logos-partners-dark');
     }
   }
 
   function desactivarModoOscuro() {
     localStorage.setItem("modoOscuroActivado", 'false');
-    const htmlActual = window.location.pathname;
+    const idBodyActual = document.body.id;
     document.getElementById("style-page").href = "css/styles.css";
 
-    if (htmlActual.includes('/index.html')) {
+    if (idBodyActual == 'bodyIndex') {
       seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-dark', 'logos-partners-light');
     }
   }
