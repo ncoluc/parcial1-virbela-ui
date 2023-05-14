@@ -6,24 +6,22 @@ function enviarFormulario(event) {
     var apellido = document.getElementById('apellido').value;
     var mail = document.getElementById('mail').value;
 
-    var asunto = 'Registro para Evento - Virbela Argentina';
-    
-    
+    var asunto = 'Registro para Evento - Virbela Argentina';        
     var cuerpoMail = 'Hola Virbela, soy ' + nombre + ' ' + apellido + '\nMi mail es: ' + mail 
     + '\nMe gustaíra reservar un lugar para el día del evento.' 
     + '\n\nSaludos!\n' + nombre +'.\n\n';
 
     var mailto = 'mailto:gabriel.molina@unahur.edu.ar?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpoMail);
-
     window.open(mailto);
   };
-  
+
   document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('formulario-evento');
-    form.addEventListener('submit', enviarFormulario);
+    const form = document.getElementById('formulario-evento');
+    if (form !== null) {
+        form.addEventListener('submit', enviarFormulario);
+    }
   });
-
-
+  
   function cambiarModo() {
     const botonCambioModo = document.getElementById("botonCambioModo");
     const temaClaro =  botonCambioModo.getAttribute("value") === "true";
@@ -40,9 +38,12 @@ function enviarFormulario(event) {
     const modoElegidoEnLocalStorage = localStorage.getItem("modoOscuroActivado");
     if (modoElegidoEnLocalStorage === "true") {
       activarModoOscuro();
+      botonCambioModo.setAttribute("value", "false");
     } else {
       desactivarModoOscuro();
+      botonCambioModo.setAttribute("value", "true");
     }
+    document.querySelector('body').classList.add('visible');
   }
 
   function activarModoOscuro() {
@@ -51,7 +52,7 @@ function enviarFormulario(event) {
     document.getElementById("style-page").href = 'css/styles-dark.css';
 
     if (htmlActual.includes('/index.html')) {
-      seleccionarPartnersCorrectosParaModoEspecifico('logos-partners', 'logos-partners-dark');
+      seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-light', 'logos-partners-dark');
     }
   }
 
@@ -61,7 +62,7 @@ function enviarFormulario(event) {
     document.getElementById("style-page").href = "css/styles.css";
 
     if (htmlActual.includes('/index.html')) {
-      seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-dark', 'logos-partners');
+      seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-dark', 'logos-partners-light');
     }
   }
 
@@ -76,8 +77,6 @@ function enviarFormulario(event) {
         const subcadena = srcCompleto.substring(posicion);
         let nuevoSrc = subcadena.replace(srcViejo, srcNuevo);
         logosPartners[i].src = nuevoSrc;
-        console.log(srcCompleto);
-        console.log(nuevoSrc);
       }
     }
   }
