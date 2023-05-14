@@ -25,15 +25,14 @@ function enviarFormulario(event) {
 
 
   function cambiarModo() {
-    console.log("llegueaca");
     const botonCambioModo = document.getElementById("botonCambioModo");
-    const temaClaro =  botonCambioModo.getAttribute("value") === "false";
+    const temaClaro =  botonCambioModo.getAttribute("value") === "true";
     if (temaClaro) {
       activarModoOscuro();
-      botonCambioModo.setAttribute("value", "true");
+      botonCambioModo.setAttribute("value", "false");
     } else {
       desactivarModoOscuro();  
-      botonCambioModo.setAttribute("value", "false");
+      botonCambioModo.setAttribute("value", "true");
     }
   }
 
@@ -51,7 +50,7 @@ function enviarFormulario(event) {
     const htmlActual = window.location.pathname;
     document.getElementById("style-page").href = 'css/styles-dark.css';
 
-    if (htmlActual == '/index.html') {
+    if (htmlActual.includes('/index.html')) {
       seleccionarPartnersCorrectosParaModoEspecifico('logos-partners', 'logos-partners-dark');
     }
   }
@@ -59,9 +58,9 @@ function enviarFormulario(event) {
   function desactivarModoOscuro() {
     localStorage.setItem("modoOscuroActivado", 'false');
     const htmlActual = window.location.pathname;
-    document.getElementById("style-page").href = 'css/styles.css';
+    document.getElementById("style-page").href = "css/styles.css";
 
-    if (htmlActual == '/index.html') {
+    if (htmlActual.includes('/index.html')) {
       seleccionarPartnersCorrectosParaModoEspecifico('logos-partners-dark', 'logos-partners');
     }
   }
@@ -72,7 +71,13 @@ function enviarFormulario(event) {
 
     for (let i = 0; i < logosPartners.length; i++) {
       let srcCompleto = logosPartners[i].src;
-      let nuevoSrc = srcCompleto.replace(srcViejo, srcNuevo);
-      logosPartners[i].src = nuevoSrc;
+      if(!srcCompleto.includes(srcNuevo)){
+        const posicion = srcCompleto.indexOf(srcViejo);
+        const subcadena = srcCompleto.substring(posicion);
+        let nuevoSrc = subcadena.replace(srcViejo, srcNuevo);
+        logosPartners[i].src = nuevoSrc;
+        console.log(srcCompleto);
+        console.log(nuevoSrc);
+      }
     }
   }
